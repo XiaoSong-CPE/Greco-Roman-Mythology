@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/mdui.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".nointerest").click(function(){
+      $(this).parent().parent().hide("slow");
+    });
+    $("li.dark").click(function(){
+      $("body").toggleClass("mdui-theme-layout-dark");
+    });
+  });
+</script>
+<style media="screen">
+.mdui-card {
+    margin-bottom: 16px;
+}
+.mdui-card-menu .mdui-btn {
+    background: rgba(0,0,0,0.38);
+}
+.card-columns .card,.card-columns .mdui-card,.card-columns .mdui-card {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card,.card-columns .mdui-card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card,.card-columns .mdui-card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+  .card-columns .card,.card-columns .mdui-card {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+	a.mdui-btn {text-decoration: none}
+</style>
+<link
+  rel="stylesheet"
+  href="css/mdui.css"
+/>
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Home - Greco-Roman Mythology</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body class="mdui-theme-primary-purple mdui-appbar-with-toolbar">
+<div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide">
+  <div class="mdui-toolbar mdui-color-theme"> <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#left-drawer'}" mdui-tooltip="{content: 'Menu'}"><i class="mdui-icon material-icons">menu</i></a><span class="mdui-typo-title">Greco-Roman Mythology</span>
+    <div class="mdui-toolbar-spacer"></div>
+    <a  mdui-tooltip="{content: 'Search'}" onclick="mdui.snackbar({message: 'Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to search.',position:'right-top'});" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a> <a class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#main-ddd'}"  mdui-tooltip="{content: 'More'}"><i class="mdui-icon material-icons">more_vert</i></a>
+    <ul class="mdui-menu" id="main-ddd">
+      <li class="mdui-menu-item"> <a onclick="javascript:location.reload();" class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons">autorenew</i>Refresh</a> </li>
+      <li class="mdui-menu-item" disabled><a href="javascript:;"><i class="mdui-menu-item-icon mdui-icon material-icons">help</i>Help & feedback</a> </li>
+      <li class="mdui-menu-item dark"><a class="mdui-ripple"><i class="mdui-menu-item-icon mdui-icon material-icons dark">brightness_4</i><span class="dark">Dark/Light Mode</span></a> </li>
+      <li class="mdui-divider"></li>
+      <li class="mdui-menu-item"> <a class="mdui-ripple" mdui-dialog="{target: '#exampleDialog'}"><i class="mdui-menu-item-icon mdui-icon material-icons">info</i>About</a> </li>
+    </ul>
+  </div>
+</div>
+<div class="mdui-drawer mdui-drawer-close mdui-drawer-full-height" id="left-drawer">
+  <ul class="mdui-list">
+    <a class="mdui-list-item mdui-ripple" href="../index.html"> <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+    <div class="mdui-list-item-content">Home</div>
+    </a> <a class="mdui-list-item mdui-ripple" href="../characters.html"> <i class="mdui-list-item-icon mdui-icon material-icons">people</i>
+    <div class="mdui-list-item-content">characters</div>
+    </a> <a class="mdui-list-item mdui-ripple" href="../stories.html"> <i class="mdui-list-item-icon mdui-icon material-icons">book</i>
+    <div class="mdui-list-item-content">Stories</div>
+    </a> <a class="mdui-list-item mdui-ripple" href="../movies.html"> <i class="mdui-list-item-icon mdui-icon material-icons">movies</i>
+    <div class="mdui-list-item-content">Movies</div>
+    </a> <a class="mdui-list-item mdui-ripple" href="../words.html"> <i class="mdui-list-item-icon mdui-icon material-icons">format_color_text</i>
+    <div class="mdui-list-item-content">Words & Phrase</div>
+    </a>
+  </ul>
+</div>
+<div class="mdui-dialog" id="exampleDialog">
+  <div class="mdui-dialog-title">About</div>
+  <div class="mdui-dialog-content">
+    <ul class="mdui-list">
+      <li class="mdui-subheader">Author</li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar"><img src="../images/1.webp"/></div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">滴嗒</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">The Elastic Compute Service provider.</div>
+        </div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar"><img src="../images/2.webp"/></div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">Kang (周康)</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">The web code programmer.</div>
+        </div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar"><img src="../images/3.webp"/></div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">Jachin (林佳成)</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">The data manager.</div>
+        </div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-avatar"><img src="../images/4.webp"/></div>
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">Barry (侯孟恺)</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">The video maker.</div>
+        </div>
+      </li>
+      <li class="mdui-subheader">Thanks</li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">MDUI</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">https://www.mdui.org/</div>
+        </div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">Material Design</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">https://material.io/</div>
+        </div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">Bootstrap</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">https://getbootstrap.com/</div>
+        </div>
+      </li>
+      <li class="mdui-list-item mdui-ripple">
+        <div class="mdui-list-item-content">
+          <div class="mdui-list-item-title mdui-list-item-one-line">Jquery</div>
+          <div class="mdui-list-item-text mdui-list-item-one-line">https://jquery.com/</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="mdui-dialog-actions"> <a class="mdui-btn mdui-ripple" mdui-dialog-close>close</a> </div>
+</div>
+<div class="mdui-container"><!-- TemplateBeginEditable name="1" -->
+  <div class="card-columns" style="margin-top:16px;">
+    <div class="mdui-card mdui-hoverable">
+      <div class="mdui-card-media mdui-ripple"> <img src="../images/bo.webp"/>
+        <div class="mdui-card-menu"> <a mdui-tooltip="{content: 'Original Picture'}" class="mdui-btn mdui-btn-icon mdui-text-color-white" href="../images/bo.webp"><i class="mdui-icon material-icons">photo</i></a> </div>
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title">Title</div>
+          <div class="mdui-card-primary-subtitle">Subtitle</div>
+        </div>
+      </div>
+      <div class="mdui-card-actions"> <a class="mdui-btn mdui-ripple mdui-text-color-theme" href="https://baike.baidu.com/item/%E5%BF%92%E4%BC%91%E6%96%AF#4">learn more</a> <a class="mdui-btn mdui-ripple mdui-text-color-theme nointerest">no interest</a> </div>
+    </div>
+  </div>
+  <!-- TemplateEndEditable --></div>
+<div class="mdui-text-center mdui-text-color-theme-secondary" style="margin:16px 0">——我们是有底线的——</div>
+</div>
+</body>
+</html>
